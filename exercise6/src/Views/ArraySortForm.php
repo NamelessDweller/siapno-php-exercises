@@ -10,7 +10,7 @@
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
     <meta http-equiv="Referrer-Policy" content="no-referrer-when-downgrade">
     <meta http-equiv="Permissions-Policy" content="geolocation=(self), microphone=()">
-    <link rel="stylesheet" href="/css/exercise6-main.css">
+    <link rel="stylesheet" href="css/exercise6-main.css">
     <title>Array Sorting</title>
 </head>
 
