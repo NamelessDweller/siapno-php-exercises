@@ -81,6 +81,10 @@
                 <?php endif; ?>
             </div>
 
+            <div class="button-container">
+                <button type="button" id="write-button">Write</button>
+            </div>
+
             <?php if (isset ($_SESSION['currentFile'])): ?>
                 <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST" style="display: none;"
                     id="write-form">
@@ -95,13 +99,8 @@
                     </div>
                 </form>
             <?php endif; ?>
-
-            <div class="button-container">
-                <button type="button" id="write-button">Write</button>
-            </div>
         </div>
     </div>
-
 </body>
 
 </html>
