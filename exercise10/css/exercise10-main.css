@@ -1,0 +1,194 @@
+/* Reset styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body and base styles */
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+/* Header styles */
+h2.exercise10-header {
+  color: #333;
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* Container styles */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+  min-height: 50vh;
+}
+
+/* Description container styles */
+.exercise10-description-container {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* File input and file section styles */
+.file-input,
+.file-section {
+  flex: 1;
+  min-width: 45%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Text styles within containers */
+.exercise10-description-container h3 {
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.exercise10-description-container p {
+  color: #666;
+  font-size: 16px;
+}
+
+/* File display styles */
+.file-display {
+  background-color: #e9ecef;
+  padding: 10px;
+  margin-top: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.file-display p {
+  margin: 10px;
+}
+
+.file-content-display {
+  max-height: 300px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f8f9fa;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  word-wrap: break-word;
+}
+
+.file-content-display pre {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  font-family: inherit;
+  white-space: inherit;
+}
+
+/* Input container styles */
+.createinput-container,
+.input-container,
+.button-container,
+.createbutton-container {
+  margin: 20px 0 0;
+}
+
+.createinput-container label,
+.input-container label,
+.button-container label,
+.createbutton-container label {
+  display: block;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.createinput-container input,
+.input-container textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.input-container textarea {
+  min-height: 100px;
+}
+
+/* Button container styles */
+.button-container,
+.createbutton-container {
+  display: flex;
+  justify-content: center;
+}
+
+.button-container button,
+.createbutton-container button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.button-container button:hover,
+.createbutton-container button:hover {
+  opacity: 0.9;
+}
+
+/* Operation message styles */
+.operation-success,
+.operation-error {
+  text-align: center;
+  padding: 15px;
+  border-radius: 5px;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.operation-success {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.operation-error {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .file-input,
+  .file-section {
+    min-width: 100%;
+  }
+}
