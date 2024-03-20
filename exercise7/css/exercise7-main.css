@@ -1,0 +1,146 @@
+/* Basic Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+h2.exercise7-header {
+  color: #333;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.exercise7-description-container {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.exercise7-description-container h3 {
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.exercise7-description-container p {
+  color: #666;
+  font-size: 16px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 90%;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 20px; /* Adjust based on your needs */
+}
+
+form,
+.contactlist-section {
+  flex: 1;
+  min-width: 45%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: calc(100% - 22px);
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.button-container {
+  text-align: center;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.contactlist-display {
+  background-color: #e9ecef;
+  padding: 10px;
+  margin: 15px 0 0 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.contactlist-display p {
+  margin: 5px;
+}
+
+.contactform-success,
+.contactform-error {
+  text-align: center;
+  padding: 15px;
+  border-radius: 5px;
+  margin-top: 20px;
+  font-size: 16px;
+  width: 90%;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contactform-success {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.contactform-error {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contactlist-section,
+  .contactlist-display {
+    min-width: 100%;
+    max-width: 100%;
+  }
+}
