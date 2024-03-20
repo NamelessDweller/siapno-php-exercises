@@ -42,7 +42,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 break;
             case 'replace':
                 $concatStr = $controller->concatenate($str1, $str2);
-                $result = $controller->replaceSubstring($concatStr, $start, $replaceWith);
+                $result = $controller->replaceSubstring($concatStr, $start, $replaceWith, $length);
                 break;
             default:
                 $result = "Invalid operation selected.";

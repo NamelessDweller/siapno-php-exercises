@@ -24,9 +24,8 @@ class StringManipulationController
         return $this->model->getSubstring($str, $start, $length);
     }
 
-    public function replaceSubstring($str, $search, $replace)
+    public function replaceSubstring($str, $start, $replace, $length = null)
     {
-        $subStr = $this->getSubstring($str, (int) $search);
-        return str_replace($subStr, $replace, $str);
+        return $this->model->replaceSubstring($str, $start, $replace, $length);
     }
 }

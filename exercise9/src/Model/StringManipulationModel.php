@@ -19,8 +19,11 @@ class StringManipulationModel
         }
     }
 
-    public function replaceSubstring($str, $search, $replace)
+    public function replaceSubstring($str, $start, $replace, $length = null)
     {
-        return str_replace($search, $replace, $str);
+        $begin = substr($str, 0, $start);
+        $end = is_null($length) ? '' : substr($str, $start + $length);
+
+        return $begin . $replace . $end;
     }
 }
